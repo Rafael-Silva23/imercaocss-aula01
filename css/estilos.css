@@ -1,0 +1,60 @@
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2014/09/28/19/33/star-465189_960_720.jpg");
+    background-size: auto 100vh /*
+      100 + vh = viewport height é referente à 100% da altura disponivel para visulaização
+      auto = automático, a dimensão horizontal será ajustada para a largura do dispositivo que irá acessar o site
+      Quando se trata de inserir os valores de dimensão, a sequência sempre será Largura e Altura*/;
+    font-family: Verdana;
+    heigth: 100vh;
+    /*Para garantir que a altura do site sempre será a mesma*/
+      
+    /*
+    Sempre tem que existir o ponto e  vírcula no final da propriedade, em todos os casos
+    As aspas podem sem simples ou duplas, quando aplicadas no valor da propriedade background-image
+    */
+  }
+  
+.menu{
+    /*
+    A utilização do ponto é necessária para chamar alguma class - todas as vezes em que ele aparece.
+    Diferentemente da class que tem os efeitos aplicados todas as vezes que o elemento aparece, o id é restrito apenas a um elemento. Ex.: id = menu, as caracteristicas definidas no css, através do #, serão aplicadas apenas neste elemento   
+    */
+    background-color: white;
+  }
+  
+.menu ul{
+    display: flex;
+    /*Essa propriedade força tudo que estava em linhas serem transformados em colunas*/
+    justify-content: space-between;
+    /*
+    Essa configuração insere um espaçamento padrão entra as colunas
+    Também pode-se utilizar o space-around, que insere o espaçamento em torno da coluna
+    */
+  }
+  
+.menu li{
+    /*Todas as li que estão dentro de um elemento que tem a classe menu, serão afetadas por esses parâmetros - É um seletor hierarquico*/
+    list-style: none;
+  }
+  
+a{
+    text-decoration: none;
+    /*Por definição, todos os link possuem o underline. Utilizando a propriedade acima, é possível inabilitar essa configuração*/
+    color:red;
+  }
+  
+a:hover{
+    text-decoration: underline;
+    /*Lembrete: pseudo classe*/
+  }
+  
+.site-subtitle,
+.site-title{
+    /*Chamar uma class, inserir a vírgula e chamar uma nova class, aplica-se as caracteristicas para as duas. Isso gera um reaproveitamento da class e não impossiblita definir parâmetros exclusivos para as class já citadas*/
+    text-align: center;
+    color: whitesmoke;
+  }
+  
+.site-subtitle{
+    font-style: italic; 
+  }
